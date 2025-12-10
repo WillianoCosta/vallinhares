@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValLinhares Premium Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="header-container">
+            <img src="./ValLinhares1.jpeg" alt="Logo ValLinhares" class="logo-header">
+            
+            <div class="mobile-menu-icon" id="mobileMenuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    <li><a href="#productGrid" class="nav-link">Estoque</a></li>
+                    <li><a href="https://wa.me/5584996106961" target="_blank" class="nav-link highlight-btn">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>Seu sonho sobre <span class="text-gradient">4 rodas</span></h1>
+            <p>Experiência premium, taxas exclusivas e a confiança que você merece.</p>
+            <a href="#productGrid" class="btn-hero pulse">
+                Ver Veículos <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">Estoque Selecionado</h2>
+            <div class="title-bar"></div>
+        </div>
+        
+        <div class="product-grid" id="productGrid">
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>ValLinhares</h3>
+            <p>Excelência em veículos multimarcas.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h3 id="modalTitle">Título</h3>
+                <button class="close-modal" id="closeModalBtn">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
