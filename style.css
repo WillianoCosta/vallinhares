@@ -250,7 +250,7 @@ footer {
 @media (max-width: 768px) {
     /* CORREÇÃO: Ícone aparece só no mobile */
     .mobile-menu-icon { display: block; }
-    .logo-header { height: 50px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); 
+    .logo-header { height: 75px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); 
     }
     
     .nav-menu {
@@ -272,3 +272,4 @@ footer {
     .modal-content { width: 95%; max-height: 85vh; }
     .modal-body { padding: 1.5rem; }
 }
+
