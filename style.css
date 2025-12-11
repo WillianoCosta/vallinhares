@@ -37,7 +37,23 @@ body { background-color: #f0f2f5; color: var(--text-dark); overflow-x: hidden; }
     display: flex; justify-content: space-between; align-items: center;
 }
 
-.logo-header { height: 70px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+.logo-header { 
+    height: 100px; 
+    
+    /* CORREÇÃO AQUI: Os dois filtros juntos na mesma linha */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)) drop-shadow(0 0 8px (--primary-color));
+    
+    object-fit: contain; 
+    border-radius: 80px; 
+    transition: transform 0.3s ease; 
+}
+
+.logo-header:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
 
 /* MENU DESKTOP (Padrão) */
 .nav-list { display: flex; gap: 2rem; list-style: none; align-items: center; }
@@ -234,7 +250,8 @@ footer {
 @media (max-width: 768px) {
     /* CORREÇÃO: Ícone aparece só no mobile */
     .mobile-menu-icon { display: block; }
-    .logo-header { height: 50px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+    .logo-header { height: 50px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); 
+    }
     
     .nav-menu {
         position: absolute; top: 70px; left: 0; width: 100%;
