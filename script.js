@@ -13,7 +13,7 @@ const cars = [
 ];
 
 // INSIRA A URL DO APPSCRIPT AQUI
-const SCRIPT_URL = 'COLE_SUA_URL_AQUI'; 
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxUtDC2cOVmSA-R5-Jat44VHzltVhCidPp8TsOKQ5AD6va7rAb8zK6Mz-D6lWejWXqI4A/exec'; 
 
 // --- SELETORES ---
 const grid = document.getElementById('productGrid');
@@ -154,4 +154,5 @@ function submitFinance(e, carName) {
 }
 
 // Inicializa o site
+
 renderCars();
