@@ -115,7 +115,8 @@ function openFinance(id) {
             <div class="form-group"><input type="text" name="cpf" placeholder="CPF" required></div>
             <div class="form-group"><input type="tel" name="telefone" placeholder="WhatsApp" required></div>
             <div class="form-group"><input type="number" name="entrada" placeholder="Entrada (R$)" required></div>
-            <button type="submit" class="btn-submit">Enviar Proposta <i class="fas fa-paper-plane"></i></button>
+            
+            <button type="submit" class="btn-submit">Solicitar Simulação <i class="fas fa-paper-plane"></i></button>
         </form>
         <div id="statusMessage" style="margin-top:15px; text-align:center; display:none; font-weight:bold;"></div>
     `;
@@ -138,21 +139,26 @@ function submitFinance(e, carName) {
     .then(() => {
         msg.style.display = 'block';
         msg.style.color = '#2ecc71';
-        msg.innerText = "✅ Proposta enviada com sucesso!";
+        
+        // AQUI MUDOU A MENSAGEM DE SUCESSO:
+        msg.innerText = "✅ Simulação enviada! Aguarde nosso contato.";
+        
         e.target.reset();
         setTimeout(closeModal, 3000);
     })
     .catch(() => {
         msg.style.display = 'block';
         msg.style.color = '#2ecc71';
-        msg.innerText = "✅ Recebemos seus dados!";
+        msg.innerText = "✅ Dados recebidos com sucesso!";
     })
     .finally(() => {
         btn.disabled = false;
-        btn.innerText = "Enviar Proposta";
+        // AQUI MUDOU O RESET DO BOTÃO:
+        btn.innerHTML = 'Solicitar Simulação <i class="fas fa-paper-plane"></i>';
     });
 }
 
 // Inicializa o site
 
 renderCars();
+
